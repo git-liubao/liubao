@@ -97,6 +97,8 @@ customLinks:
       url: http://jekyllrb.com
     - text: Jekyll Theme
       url: http://www.zhanxin.info/themes.html
+    - text: 我的个人主页
+      url: http://git-liubao.github.io/liubao/person/index.html
     message: Friends    
   - item:
     - text: Java Code Geeks
