@@ -30,7 +30,7 @@ excerpt_separator: "\n\n"
 detach:       false
 port:         4000
 host:         127.0.0.1
-baseurl:      /liubao
+baseurl:      /liubao/
 
 # Outputting
 permalink:     date
@@ -42,7 +42,7 @@ timezone:      null
 title: liubao
 description: Blog
 keywords: programming
-url: /liubao
+url: /liubao/
 feed: /atom.xml
 favicon: /liubao/images/shortcut.jpg
 
