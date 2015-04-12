@@ -64,7 +64,10 @@ author:
     name: Liu Bao
     email: liubaowork@yeah.net
     imageLink: /images/header.jpg
-    simpleIntro: 心有多大 舞台就有多大
+    simpleIntro: 
+	<p>刘 宝</p>
+	<p>北京理工大学计算机学院</p>
+	<p>心有多大 舞台就有多大</p>
     detailIntro:
       <p>使用过很多方式写博客，都没有坚持下来，不是样式难看，就是没有我需要的功能或者太多的功能(其实就是我懒的写吧)。
       用blogjava记录过一段时间，然后看阿里云怎么火，还半年免费，就弄了台云主机搭建搞了一阵子。
