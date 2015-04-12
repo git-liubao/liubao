@@ -30,7 +30,7 @@ excerpt_separator: "\n\n"
 detach:       false
 port:         4000
 host:         127.0.0.1
-baseurl:      /liubao # does not include hostname
+baseurl:      /liubao 
 
 # Outputting
 permalink:     date
@@ -39,9 +39,9 @@ timezone:      null
 
 
 #Site config
-title: 9leg
-description: java技术文章
-keywords: Java
+title: liubao
+description: Blog
+keywords: programming
 url: /liubao
 feed: /atom.xml
 favicon: /images/shortcut.jpg
@@ -61,10 +61,10 @@ nav:
 
 #Author config
 author:
-    name: zhujiajun
-    email: leoneyes2012@gmail.com
+    name: Liu Bao
+    email: liubaowork@yeah.net
     imageLink: /images/header.jpg
-    simpleIntro: 贵在坚持 让梦想照进现实
+    simpleIntro: 心有多大 舞台就有多大
     detailIntro:
       <p>使用过很多方式写博客，都没有坚持下来，不是样式难看，就是没有我需要的功能或者太多的功能(其实就是我懒的写吧)。
       用blogjava记录过一段时间，然后看阿里云怎么火，还半年免费，就弄了台云主机搭建搞了一阵子。
