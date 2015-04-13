@@ -18,6 +18,11 @@ post的例子模板。
 * 序号3
 * 序号4
 
+** 序号a
+** 序号b
+** 序号c
+** 序号d
+
 下面是highlight
 {% highlight java %}
 
