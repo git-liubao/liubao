@@ -69,4 +69,5 @@ Case #2: 0
 Case #3: 1
 Case #4: 3
 EmacsNormalVim
-{% highlight c++ %}
+
+{% endhighlight %}
