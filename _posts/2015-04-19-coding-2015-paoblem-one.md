@@ -68,6 +68,93 @@ Case #1: 1
 Case #2: 0
 Case #3: 1
 Case #4: 3
-EmacsNormalVim
+
+{% endhighlight %}
+
+
+我的解决方案：
+{% highlight c++ %}
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+
+vector<string> monthes;
+
+int monthnum(string str)
+{
+	for(int i=0;i<monthes.size();i++)
+	{
+		if(monthes[i] == str)
+		{
+			return i;
+		}	
+	}
+	return -1;
+}
+
+int days(int y, int m, int d)
+{
+	int num;
+	num = y/4 -y/100 + y/400;
+	if(m < 2)
+	{
+		if(y%400==0 || (y%4==0 && y%100 !=0))
+		{
+			num --;
+		}
+	}
+	return num;
+}
+
+int main()
+{
+	
+	monthes.push_back("January");
+	monthes.push_back("February");
+	monthes.push_back("March");
+	monthes.push_back("April");
+	monthes.push_back("May");
+	monthes.push_back("June");
+	monthes.push_back("July");
+	monthes.push_back("August");
+	monthes.push_back("September");
+	monthes.push_back("October");
+	monthes.push_back("November");
+	monthes.push_back("December");
+	
+	int T, c;
+	string s_month;
+	int month, year, day;
+	int num1, num2;
+
+	cin >> T;
+	for(c=0;c<T;c++)
+	{
+		cin >> s_month >> day;
+		getchar();
+		cin >> year;
+
+		month = monthnum(s_month);
+		num1 = days(year, month, day);
+
+		cin >> s_month >> day;
+		getchar();
+		cin >> year;
+
+		month = monthnum(s_month);
+		num2 = days(year, month, day);
+		if(month ==1 && day == 29)
+		{
+			num2++;
+		}
+		cout << "Case #" << c+1 << ": " << num2-num1  << endl;
+	}
+}
+
+
 
 {% endhighlight %}
