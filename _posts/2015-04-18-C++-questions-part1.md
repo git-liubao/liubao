@@ -43,3 +43,8 @@ int main()
 	b.print();
 }
 {% endhighlight %}
+
+
+## c++中struct和class的区别
+
+如果没有标明成员函数或者变量的访问权限级别，在struct中默认为public，class中默认为private。
