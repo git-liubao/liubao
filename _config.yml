@@ -44,7 +44,6 @@ nav:
     - { Tags: '/blog/tags/' }
   About:          
     - '/about/'
-    - { me: '/person/' }
   Github Project: 
     - 'http://git-liubao.github.io/'
 
