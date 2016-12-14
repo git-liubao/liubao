@@ -2,8 +2,8 @@
 title: ACoder's Bolg
 tagline: 'The sky is as big as your eyes'
 description: 'Made by <a href="http://git-liubao.github.io" target="_blank">@git-liubao</a>.'
-baseurl: ""
-url: http://git-liubao.github.io/liubao
+baseurl: "/liubao"
+url: http://git-liubao.github.io/
 logo: '/public/logo.png'
 
 # Site configurations
