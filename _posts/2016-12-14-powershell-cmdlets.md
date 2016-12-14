@@ -13,8 +13,7 @@ tags:
   <thead>
     <tr>
       <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
+      <th>Module Name</th>
     </tr>
   </thead>
   <tbody>
