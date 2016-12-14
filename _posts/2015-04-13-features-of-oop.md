@@ -4,7 +4,7 @@ title: 面向对象的三个基本特征
 date: 2015-04-13 19:17:37
 category: Language
 tags:
-- language
+- Language
 - C++
 ---
 
