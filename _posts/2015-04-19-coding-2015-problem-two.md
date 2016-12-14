@@ -4,7 +4,7 @@ title: 编程之美2015资格赛 题目二
 date: 2015-04-19 20:17:40
 category: Language
 tags:
-- language
+- Language
 - C++
 - code
 ---
