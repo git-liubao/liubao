@@ -44,7 +44,7 @@ nav:
     - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
   About:          
-    - '/about/'
+    - '/person/'
   Github Project: 
     - 'http://codinfox.github.io/'
 
