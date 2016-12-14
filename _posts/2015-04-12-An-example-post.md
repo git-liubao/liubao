@@ -2,7 +2,10 @@
 layout: post
 title: post例子模板
 date: 2015-04-12 19:17:37
-category: "Others"
+category: Jekyll
+tags:
+- Jekyll
+- Theme
 ---
 
 post的例子模板。

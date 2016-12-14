@@ -2,7 +2,11 @@
 layout: post
 title: 编程之美2015资格赛 题目二
 date: 2015-04-19 20:17:40
-category: "C++"
+category: Language
+tags:
+- language
+- C++
+- code
 ---
 
 题目2 : 回文字符序列

@@ -2,7 +2,11 @@
 layout: post
 title: 编程之美2015资格赛 题目一
 date: 2015-04-19 20:17:37
-category: "C++"
+category: Language
+tags:
+- language
+- C++
+- code
 ---
 
 题目1 : 2月29日

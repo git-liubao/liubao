@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Example content
+category: Jekyll
+tags:
+- Jekyll
+- Theme
 ---
 
 
