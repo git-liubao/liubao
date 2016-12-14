@@ -27,12 +27,12 @@ author:
   name: Bao Liu
   description: A new software engineer.
   gravatar: 852f7256328ce6bd3db0933c5d8378e3 # md5 hash of your email address
+  email:     allenicer00@gmail.com
   contact:
     github:    https://github.com/git-liubao
     # facebook:  <hide>
     # twitter:   https://twitter.com/Li_Zhihao
     # weibo:     http://weibo.com/41173780
-    email:     allenicer00@gmail.com
 
 # Navigation (2nd level links supported)
 nav:
