@@ -53,7 +53,7 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/a_coder_picture.jpg
-  caption: ACoder &copy; Bao Liu
+  caption: ACoder &copy; <a href="/about/">Bao Liu</a>
 
 # Puglins
 mathjax: true # whether support mathjax
