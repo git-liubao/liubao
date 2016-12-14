@@ -7,243 +7,961 @@ tags:
 - PowerShell
 ---
 
-### Tables
+### Usefaul PowerShell Cmdlets
 
-Usefaul PowerShell Cmdlets:
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+	<td>Add-Computer</td>
+	<td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Add-Content</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Add-History</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Add-Member</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Add-PSSnapin</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Add-Type</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Checkpoint-Computer</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Clear-Content</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Clear-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Clear-History</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Clear-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Clear-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Clear-Variable</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Compare-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Complete-Transaction</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Connect-WSMan</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>ConvertFrom-Csv</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>ConvertFrom-SecureString</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>ConvertFrom-StringData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Convert-Path</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>ConvertTo-Csv</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>ConvertTo-Html</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>ConvertTo-SecureString</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>ConvertTo-Xml</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Copy-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Copy-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Debug-Process</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Disable-ComputerRestore</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Disable-PSBreakpoint</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Disable-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Disable-WSManCredSSP</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Disconnect-WSMan</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Enable-ComputerRestore</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Enable-PSBreakpoint</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Enable-PSRemoting</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Enable-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Enable-WSManCredSSP</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Enter-PSSession</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Exit-PSSession</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Export-Alias</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Export-Clixml</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Export-Console</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Export-Counter</td>
+        <td>Microsoft.PowerShell.Diagnostics </td>
+    </tr>
+    <tr>
+        <td>Export-Csv</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Export-FormatData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Export-ModuleMember</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Export-PSSession</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>ForEach-Object</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Format-Custom</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Format-List</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Format-Table</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Format-Wide</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Acl</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Get-Alias</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-AuthenticodeSignature</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Get-ChildItem</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Command</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-ComputerRestorePoint</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Content</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Counter</td>
+        <td>Microsoft.PowerShell.Diagnostics </td>
+    </tr>
+    <tr>
+        <td>Get-Credential</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Get-Culture</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Date</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Event</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-EventSubscriber</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-ExecutionPolicy</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Get-FormatData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Help</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-History</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-Host</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-HotFix</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-Location</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-Member</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Module</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-PfxCertificate</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Get-Process</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-PSBreakpoint</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-PSCallStack</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-PSDrive</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-PSProvider</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-PSSession</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-PSSnapin</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Get-Random</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-TraceSource</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Transaction</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-UICulture</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Unique</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-Variable</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Get-WinEvent</td>
+        <td>Microsoft.PowerShell.Diagnostics </td>
+    </tr>
+    <tr>
+        <td>Get-WmiObject</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Get-WSManCredSSP</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Get-WSManInstance</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Group-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Import-Alias</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Import-Clixml</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Import-Counter</td>
+        <td>Microsoft.PowerShell.Diagnostics </td>
+    </tr>
+    <tr>
+        <td>Import-Csv</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Import-LocalizedData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Import-Module</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Import-PSSession</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Invoke-Command</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Invoke-Expression</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Invoke-History</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Invoke-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Invoke-WmiMethod</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Invoke-WSManAction</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Join-Path</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Limit-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Measure-Command</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Measure-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Move-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Move-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-Alias</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>New-Event</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>New-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-Module</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>New-ModuleManifest</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>New-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>New-PSDrive</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-PSSession</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>New-PSSessionOption</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>New-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-TimeSpan</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>New-Variable</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>New-WebServiceProxy</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>New-WSManInstance</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>New-WSManSessionOption</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Out-Default</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-File</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-GridView</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-Host</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-Null</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-Printer</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Out-String</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Pop-Location</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Push-Location</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Read-Host</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Receive-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Register-EngineEvent</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Register-ObjectEvent</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Register-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Register-WmiEvent</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-Computer</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-Event</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Remove-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Remove-Module</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Remove-PSBreakpoint</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Remove-PSDrive</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-PSSession</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Remove-PSSnapin</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Remove-Variable</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Remove-WmiObject</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Remove-WSManInstance</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Rename-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Rename-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Reset-ComputerMachinePassword</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Resolve-Path</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Restart-Computer</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Restart-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Restore-Computer</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Resume-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Select-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Select-String</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Select-Xml</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Send-MailMessage</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-Acl</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Set-Alias</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-AuthenticodeSignature</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Set-Content</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-Date</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-ExecutionPolicy</td>
+        <td>Microsoft.PowerShell.Security </td>
+    </tr>
+    <tr>
+        <td>Set-Item</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-ItemProperty</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-Location</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-PSBreakpoint</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-PSDebug</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Set-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Set-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-StrictMode</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Set-TraceSource</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-Variable</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Set-WmiInstance</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Set-WSManInstance</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Set-WSManQuickConfig</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Show-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Sort-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Split-Path</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Start-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Start-Process</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Start-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Start-Sleep</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Start-Transaction</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Start-Transcript</td>
+        <td>Microsoft.PowerShell.Host </td>
+    </tr>
+    <tr>
+        <td>Stop-Computer</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Stop-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Stop-Process</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Stop-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Stop-Transcript</td>
+        <td>Microsoft.PowerShell.Host </td>
+    </tr>
+    <tr>
+        <td>Suspend-Service</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Tee-Object</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Test-ComputerSecureChannel</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Test-Connection</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Test-ModuleManifest</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Test-Path</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Test-WSMan</td>
+        <td>Microsoft.WSMan.Management </td>
+    </tr>
+    <tr>
+        <td>Trace-Command</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Undo-Transaction</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Unregister-Event</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Unregister-PSSessionConfiguration</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Update-FormatData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Update-List</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Update-TypeData</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Use-Transaction</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Wait-Event</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Wait-Job</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Wait-Process</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Where-Object</td>
+        <td>Microsoft.PowerShell.Core </td>
+    </tr>
+    <tr>
+        <td>Write-Debug</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>* Write-Error</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Write-EventLog</td>
+        <td>Microsoft.PowerShell.Management </td>
+    </tr>
+    <tr>
+        <td>Write-Host</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Write-Output</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Write-Progress</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Write-Verbose</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+    <tr>
+        <td>Write-Warning</td>
+        <td>Microsoft.PowerShell.Utility </td>
+    </tr>
+  </tbody>
+</table>
 
-* Add-Computer	Microsoft.PowerShell.Management 
-* Add-Content	Microsoft.PowerShell.Management 
-* Add-History	Microsoft.PowerShell.Core 
-* Add-Member	Microsoft.PowerShell.Utility 
-* Add-PSSnapin	Microsoft.PowerShell.Core 
-* Add-Type	Microsoft.PowerShell.Utility 
-* Checkpoint-Computer	Microsoft.PowerShell.Management 
-* Clear-Content	Microsoft.PowerShell.Management 
-* Clear-EventLog	Microsoft.PowerShell.Management 
-* Clear-History	Microsoft.PowerShell.Core 
-* Clear-Item	Microsoft.PowerShell.Management 
-* Clear-ItemProperty	Microsoft.PowerShell.Management 
-* Clear-Variable	Microsoft.PowerShell.Utility 
-* Compare-Object	Microsoft.PowerShell.Utility 
-* Complete-Transaction	Microsoft.PowerShell.Management 
-* Connect-WSMan	Microsoft.WSMan.Management 
-* ConvertFrom-Csv	Microsoft.PowerShell.Utility 
-* ConvertFrom-SecureString	Microsoft.PowerShell.Security 
-* ConvertFrom-StringData	Microsoft.PowerShell.Utility 
-* Convert-Path	Microsoft.PowerShell.Management 
-* ConvertTo-Csv	Microsoft.PowerShell.Utility 
-* ConvertTo-Html	Microsoft.PowerShell.Utility 
-* ConvertTo-SecureString	Microsoft.PowerShell.Security 
-* ConvertTo-Xml	Microsoft.PowerShell.Utility 
-* Copy-Item	Microsoft.PowerShell.Management 
-* Copy-ItemProperty	Microsoft.PowerShell.Management 
-* Debug-Process	Microsoft.PowerShell.Management 
-* Disable-ComputerRestore	Microsoft.PowerShell.Management 
-* Disable-PSBreakpoint	Microsoft.PowerShell.Utility 
-* Disable-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Disable-WSManCredSSP	Microsoft.WSMan.Management 
-* Disconnect-WSMan	Microsoft.WSMan.Management 
-* Enable-ComputerRestore	Microsoft.PowerShell.Management 
-* Enable-PSBreakpoint	Microsoft.PowerShell.Utility 
-* Enable-PSRemoting	Microsoft.PowerShell.Core 
-* Enable-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Enable-WSManCredSSP	Microsoft.WSMan.Management 
-* Enter-PSSession	Microsoft.PowerShell.Core 
-* Exit-PSSession	Microsoft.PowerShell.Core 
-* Export-Alias	Microsoft.PowerShell.Utility 
-* Export-Clixml	Microsoft.PowerShell.Utility 
-* Export-Console	Microsoft.PowerShell.Core 
-* Export-Counter	Microsoft.PowerShell.Diagnostics 
-* Export-Csv	Microsoft.PowerShell.Utility 
-* Export-FormatData	Microsoft.PowerShell.Utility 
-* Export-ModuleMember	Microsoft.PowerShell.Core 
-* Export-PSSession	Microsoft.PowerShell.Utility 
-* ForEach-Object	Microsoft.PowerShell.Core 
-* Format-Custom	Microsoft.PowerShell.Utility 
-* Format-List	Microsoft.PowerShell.Utility 
-* Format-Table	Microsoft.PowerShell.Utility 
-* Format-Wide	Microsoft.PowerShell.Utility 
-* Get-Acl	Microsoft.PowerShell.Security 
-* Get-Alias	Microsoft.PowerShell.Utility 
-* Get-AuthenticodeSignature	Microsoft.PowerShell.Security 
-* Get-ChildItem	Microsoft.PowerShell.Management 
-* Get-Command	Microsoft.PowerShell.Core 
-* Get-ComputerRestorePoint	Microsoft.PowerShell.Management 
-* Get-Content	Microsoft.PowerShell.Management 
-* Get-Counter	Microsoft.PowerShell.Diagnostics 
-* Get-Credential	Microsoft.PowerShell.Security 
-* Get-Culture	Microsoft.PowerShell.Utility 
-* Get-Date	Microsoft.PowerShell.Utility 
-* Get-Event	Microsoft.PowerShell.Utility 
-* Get-EventLog	Microsoft.PowerShell.Management 
-* Get-EventSubscriber	Microsoft.PowerShell.Utility 
-* Get-ExecutionPolicy	Microsoft.PowerShell.Security 
-* Get-FormatData	Microsoft.PowerShell.Utility 
-* Get-Help	Microsoft.PowerShell.Core 
-* Get-History	Microsoft.PowerShell.Core 
-* Get-Host	Microsoft.PowerShell.Utility 
-* Get-HotFix	Microsoft.PowerShell.Management 
-* Get-Item	Microsoft.PowerShell.Management 
-* Get-ItemProperty	Microsoft.PowerShell.Management 
-* Get-Job	Microsoft.PowerShell.Core 
-* Get-Location	Microsoft.PowerShell.Management 
-* Get-Member	Microsoft.PowerShell.Utility 
-* Get-Module	Microsoft.PowerShell.Core 
-* Get-PfxCertificate	Microsoft.PowerShell.Security 
-* Get-Process	Microsoft.PowerShell.Management 
-* Get-PSBreakpoint	Microsoft.PowerShell.Utility 
-* Get-PSCallStack	Microsoft.PowerShell.Utility 
-* Get-PSDrive	Microsoft.PowerShell.Management 
-* Get-PSProvider	Microsoft.PowerShell.Management 
-* Get-PSSession	Microsoft.PowerShell.Core 
-* Get-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Get-PSSnapin	Microsoft.PowerShell.Core 
-* Get-Random	Microsoft.PowerShell.Utility 
-* Get-Service	Microsoft.PowerShell.Management 
-* Get-TraceSource	Microsoft.PowerShell.Utility 
-* Get-Transaction	Microsoft.PowerShell.Management 
-* Get-UICulture	Microsoft.PowerShell.Utility 
-* Get-Unique	Microsoft.PowerShell.Utility 
-* Get-Variable	Microsoft.PowerShell.Utility 
-* Get-WinEvent	Microsoft.PowerShell.Diagnostics 
-* Get-WmiObject	Microsoft.PowerShell.Management 
-* Get-WSManCredSSP	Microsoft.WSMan.Management 
-* Get-WSManInstance	Microsoft.WSMan.Management 
-* Group-Object	Microsoft.PowerShell.Utility 
-* Import-Alias	Microsoft.PowerShell.Utility 
-* Import-Clixml	Microsoft.PowerShell.Utility 
-* Import-Counter	Microsoft.PowerShell.Diagnostics 
-* Import-Csv	Microsoft.PowerShell.Utility 
-* Import-LocalizedData	Microsoft.PowerShell.Utility 
-* Import-Module	Microsoft.PowerShell.Core 
-* Import-PSSession	Microsoft.PowerShell.Utility 
-* Invoke-Command	Microsoft.PowerShell.Core 
-* Invoke-Expression	Microsoft.PowerShell.Utility 
-* Invoke-History	Microsoft.PowerShell.Core 
-* Invoke-Item	Microsoft.PowerShell.Management 
-* Invoke-WmiMethod	Microsoft.PowerShell.Management 
-* Invoke-WSManAction	Microsoft.WSMan.Management 
-* Join-Path	Microsoft.PowerShell.Management 
-* Limit-EventLog	Microsoft.PowerShell.Management 
-* Measure-Command	Microsoft.PowerShell.Utility 
-* Measure-Object	Microsoft.PowerShell.Utility 
-* Move-Item	Microsoft.PowerShell.Management 
-* Move-ItemProperty	Microsoft.PowerShell.Management 
-* New-Alias	Microsoft.PowerShell.Utility 
-* New-Event	Microsoft.PowerShell.Utility 
-* New-EventLog	Microsoft.PowerShell.Management 
-* New-Item	Microsoft.PowerShell.Management 
-* New-ItemProperty	Microsoft.PowerShell.Management 
-* New-Module	Microsoft.PowerShell.Core 
-* New-ModuleManifest	Microsoft.PowerShell.Core 
-* New-Object	Microsoft.PowerShell.Utility 
-* New-PSDrive	Microsoft.PowerShell.Management 
-* New-PSSession	Microsoft.PowerShell.Core 
-* New-PSSessionOption	Microsoft.PowerShell.Core 
-* New-Service	Microsoft.PowerShell.Management 
-* New-TimeSpan	Microsoft.PowerShell.Utility 
-* New-Variable	Microsoft.PowerShell.Utility 
-* New-WebServiceProxy	Microsoft.PowerShell.Management 
-* New-WSManInstance	Microsoft.WSMan.Management 
-* New-WSManSessionOption	Microsoft.WSMan.Management 
-* Out-Default	Microsoft.PowerShell.Utility 
-* Out-File	Microsoft.PowerShell.Utility 
-* Out-GridView	Microsoft.PowerShell.Utility 
-* Out-Host	Microsoft.PowerShell.Utility 
-* Out-Null	Microsoft.PowerShell.Utility 
-* Out-Printer	Microsoft.PowerShell.Utility 
-* Out-String	Microsoft.PowerShell.Utility 
-* Pop-Location	Microsoft.PowerShell.Management 
-* Push-Location	Microsoft.PowerShell.Management 
-* Read-Host	Microsoft.PowerShell.Utility 
-* Receive-Job	Microsoft.PowerShell.Core 
-* Register-EngineEvent	Microsoft.PowerShell.Utility 
-* Register-ObjectEvent	Microsoft.PowerShell.Utility 
-* Register-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Register-WmiEvent	Microsoft.PowerShell.Management 
-* Remove-Computer	Microsoft.PowerShell.Management 
-* Remove-Event	Microsoft.PowerShell.Utility 
-* Remove-EventLog	Microsoft.PowerShell.Management 
-* Remove-Item	Microsoft.PowerShell.Management 
-* Remove-ItemProperty	Microsoft.PowerShell.Management 
-* Remove-Job	Microsoft.PowerShell.Core 
-* Remove-Module	Microsoft.PowerShell.Core 
-* Remove-PSBreakpoint	Microsoft.PowerShell.Utility 
-* Remove-PSDrive	Microsoft.PowerShell.Management 
-* Remove-PSSession	Microsoft.PowerShell.Core 
-* Remove-PSSnapin	Microsoft.PowerShell.Core 
-* Remove-Variable	Microsoft.PowerShell.Utility 
-* Remove-WmiObject	Microsoft.PowerShell.Management 
-* Remove-WSManInstance	Microsoft.WSMan.Management 
-* Rename-Item	Microsoft.PowerShell.Management 
-* Rename-ItemProperty	Microsoft.PowerShell.Management 
-* Reset-ComputerMachinePassword	Microsoft.PowerShell.Management 
-* Resolve-Path	Microsoft.PowerShell.Management 
-* Restart-Computer	Microsoft.PowerShell.Management 
-* Restart-Service	Microsoft.PowerShell.Management 
-* Restore-Computer	Microsoft.PowerShell.Management 
-* Resume-Service	Microsoft.PowerShell.Management 
-* Select-Object	Microsoft.PowerShell.Utility 
-* Select-String	Microsoft.PowerShell.Utility 
-* Select-Xml	Microsoft.PowerShell.Utility 
-* Send-MailMessage	Microsoft.PowerShell.Utility 
-* Set-Acl	Microsoft.PowerShell.Security 
-* Set-Alias	Microsoft.PowerShell.Utility 
-* Set-AuthenticodeSignature	Microsoft.PowerShell.Security 
-* Set-Content	Microsoft.PowerShell.Management 
-* Set-Date	Microsoft.PowerShell.Utility 
-* Set-ExecutionPolicy	Microsoft.PowerShell.Security 
-* Set-Item	Microsoft.PowerShell.Management 
-* Set-ItemProperty	Microsoft.PowerShell.Management 
-* Set-Location	Microsoft.PowerShell.Management 
-* Set-PSBreakpoint	Microsoft.PowerShell.Utility 
-* Set-PSDebug	Microsoft.PowerShell.Core 
-* Set-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Set-Service	Microsoft.PowerShell.Management 
-* Set-StrictMode	Microsoft.PowerShell.Core 
-* Set-TraceSource	Microsoft.PowerShell.Utility 
-* Set-Variable	Microsoft.PowerShell.Utility 
-* Set-WmiInstance	Microsoft.PowerShell.Management 
-* Set-WSManInstance	Microsoft.WSMan.Management 
-* Set-WSManQuickConfig	Microsoft.WSMan.Management 
-* Show-EventLog	Microsoft.PowerShell.Management 
-* Sort-Object	Microsoft.PowerShell.Utility 
-* Split-Path	Microsoft.PowerShell.Management 
-* Start-Job	Microsoft.PowerShell.Core 
-* Start-Process	Microsoft.PowerShell.Management 
-* Start-Service	Microsoft.PowerShell.Management 
-* Start-Sleep	Microsoft.PowerShell.Utility 
-* Start-Transaction	Microsoft.PowerShell.Management 
-* Start-Transcript	Microsoft.PowerShell.Host 
-* Stop-Computer	Microsoft.PowerShell.Management 
-* Stop-Job	Microsoft.PowerShell.Core 
-* Stop-Process	Microsoft.PowerShell.Management 
-* Stop-Service	Microsoft.PowerShell.Management 
-* Stop-Transcript	Microsoft.PowerShell.Host 
-* Suspend-Service	Microsoft.PowerShell.Management 
-* Tee-Object	Microsoft.PowerShell.Utility 
-* Test-ComputerSecureChannel	Microsoft.PowerShell.Management 
-* Test-Connection	Microsoft.PowerShell.Management 
-* Test-ModuleManifest	Microsoft.PowerShell.Core 
-* Test-Path	Microsoft.PowerShell.Management 
-* Test-WSMan	Microsoft.WSMan.Management 
-* Trace-Command	Microsoft.PowerShell.Utility 
-* Undo-Transaction	Microsoft.PowerShell.Management 
-* Unregister-Event	Microsoft.PowerShell.Utility 
-* Unregister-PSSessionConfiguration	Microsoft.PowerShell.Core 
-* Update-FormatData	Microsoft.PowerShell.Utility 
-* Update-List	Microsoft.PowerShell.Utility 
-* Update-TypeData	Microsoft.PowerShell.Utility 
-* Use-Transaction	Microsoft.PowerShell.Management 
-* Wait-Event	Microsoft.PowerShell.Utility 
-* Wait-Job	Microsoft.PowerShell.Core 
-* Wait-Process	Microsoft.PowerShell.Management 
-* Where-Object	Microsoft.PowerShell.Core 
-* Write-Debug	Microsoft.PowerShell.Utility 
-* Write-Error	Microsoft.PowerShell.Utility 
-* Write-EventLog	Microsoft.PowerShell.Management 
-* Write-Host	Microsoft.PowerShell.Utility 
-* Write-Output	Microsoft.PowerShell.Utility 
-* Write-Progress	Microsoft.PowerShell.Utility 
-* Write-Verbose	Microsoft.PowerShell.Utility 
-* Write-Warning	Microsoft.PowerShell.Utility 
