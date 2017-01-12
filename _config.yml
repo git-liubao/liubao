@@ -45,7 +45,7 @@ nav:
   About:          
     - '/about/'
   Github Project: 
-    - 'http://git-liubao.github.io/'
+    - 'https://github.com/git-liubao/liubao'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
