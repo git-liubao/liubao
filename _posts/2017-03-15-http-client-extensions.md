@@ -7,11 +7,11 @@ tags:
 - HttpClient
 ---
 
-## Keyboard shortcuts in Windows
+## HttpClientExtensions in C#
 
 {% highlight c# %}
-#region HttpClientExtensions.cs
 
+#region HttpClientExtensions.cs
 namespace Common
 {
     using System;
@@ -181,7 +181,70 @@ namespace Common
         }
     }
 }
-
-
 #endregion
+
+#region HttpRetryEventArgs.cs
+
+namespace Common
+{
+    using System;
+    using System.Net;
+
+    /// <summary>
+    /// The HTTP client retry event argument.
+    /// </summary>
+    /// <seealso cref="System.EventArgs" />
+    public class HttpRetryEventArgs : EventArgs
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HttpRetryEventArgs"/> class.
+        /// </summary>
+        /// <param name="currentRetryCount">The current retry attempt count.</param>
+        /// <param name="delay">The delay that indicates how long the current thread will be suspended before the next iteration is invoked.</param>
+        /// <param name="lastStatusCode">The last status code.</param>
+        /// <param name="lastRequestLatency">The latency of last HTTP request.</param>
+        /// <param name="lastResponseMessage">The last response message.</param>
+        public HttpRetryEventArgs(
+            int currentRetryCount,
+            TimeSpan delay,
+            HttpStatusCode lastStatusCode,
+            TimeSpan lastRequestLatency,
+            string lastResponseMessage)
+        {
+            this.CurrentRetryCount = currentRetryCount;
+            this.Delay = delay;
+            this.LastStatusCode = lastStatusCode;
+            this.LastRequestLatency = lastRequestLatency;
+            this.LastResponseMessage = lastResponseMessage;
+        }
+
+        /// <summary>
+        /// Gets the current retry count.
+        /// </summary>
+        public int CurrentRetryCount { get; }
+
+        /// <summary>
+        ///     Gets the delay that indicates how long the current thread will be suspended before
+        ///     the next iteration is invoked.
+        /// </summary>
+        public TimeSpan Delay { get; }
+
+        /// <summary>
+        /// Gets the last status code.
+        /// </summary>
+        public HttpStatusCode LastStatusCode { get; }
+
+        /// <summary>
+        /// Gets the latency of last HTTP request.
+        /// </summary>
+        public TimeSpan LastRequestLatency { get; }
+
+        /// <summary>
+        /// Gets the last response message.
+        /// </summary>
+        public string LastResponseMessage { get; }
+    }
+}
+#endregion
+
 {% endhighlight %}
