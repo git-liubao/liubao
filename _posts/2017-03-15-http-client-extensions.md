@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HttpClientExtensions in C#
+title: HttpClientExtensions in C Sharp
 category: Language
 tags:
 - C#
 - HttpClient
 ---
 
-## HttpClientExtensions in C#
+## HttpClientExtensions in C Sharp
 
 {% highlight c# %}
 
